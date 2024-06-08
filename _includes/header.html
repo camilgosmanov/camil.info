@@ -6,16 +6,28 @@
       </h1>
       <div class="header-icons">
         {% if site.linkedin_username %}
-        <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/camilg"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+        <div class="tooltip">
+          <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/camilg"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+          <span class="tooltiptext">LinkedIn</span>
+        </div>
         {% endif %}
         {% if site.github_username %}
-        <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.github_username }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        <div class="tooltip">
+          <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.github_username }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+          <span class="tooltiptext">Github</span>
+        </div>
         {% endif %}
         {% if site.github_username %}
-        <a aria-label="My Google Scholar" target="_blank" href="https://scholar.google.com/citations?user=ZAq-XjwAAAAJ&hl=en&authuser=1"><i class="icon fa fa-book" aria-hidden="true"></i></a>
+        <div class="tooltip">
+          <a aria-label="My Google Scholar" target="_blank" href="https://scholar.google.com/citations?user=ZAq-XjwAAAAJ&hl=en&authuser=1"><i class="icon fa fa-book" aria-hidden="true"></i></a>
+          <span class="tooltiptext">Google Scholar</span>
+        </div>
         {% endif %}
         {% if site.email %}
-        <a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i></a>
+        <div class="tooltip">
+          <a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i></a>
+          <span class="tooltiptext">Email</span>
+        </div>
         {% endif %}
       </div>
       <div class="header-links">

@@ -11,6 +11,33 @@
   }
 }
 
+#particles-js .header .header-icons .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+#particles-js .header .header-icons .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the icon */
+  left: 50%;
+  margin-left: -60px; /* Use half of the width to center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#particles-js .header .header-icons .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 .header {
   font-family: 'Montserrat', sans-serif;
   z-index: 1;
