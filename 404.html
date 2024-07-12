@@ -1,16 +1,22 @@
+---
+layout: default
+---
+
 <!DOCTYPE html>
-<link rel="stylesheet" href="../assets/css/devicon.min.css">
 <html lang="en">
+<head>
+  <link rel="stylesheet" href="{{ '/assets/css/devicon.min.css' | relative_url }}">
   {% include head.html %}
-  <body>
-      {% include header.html %}
-      
-      <div class="content">
-          <h1>Page Not Found</h1>
-          <p>We're sorry, but the page you were looking for doesn't exist.</p>
-          <p><a href="{{ site.baseurl }}/">Go back to the homepage</a></p>
-      </div>
-      
-      {% include footer.html %}
-  </body>
+</head>
+<body>
+  {% include header.html %}
+
+  <div class="content">
+    <h1>Page Not Found</h1>
+    <p>We're sorry, but the page you were looking for doesn't exist.</p>
+    <p><a href="{{ site.baseurl }}/">Go back to the homepage</a></p>
+  </div>
+
+  {% include footer.html %}
+</body>
 </html>
