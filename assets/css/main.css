@@ -41,19 +41,6 @@
 
 
 /* Styling for the 404 page */
-#error-title {
-    font-size: 3em;
-    color: #ff4c4c;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.error-message {
-    font-size: 1.5em;
-    color: #555;
-    text-align: center;
-    margin: 20px 0;
-}
 
 .error-link a {
     font-size: 1.2em;
